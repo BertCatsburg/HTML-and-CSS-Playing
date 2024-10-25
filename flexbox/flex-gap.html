@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Playing</title>
+    <style>
+        .parent {
+            /* Setting Flex */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            /* This is about to to place the child-boxes */
+            justify-content: center;
+            align-items: end;
+            align-content: space-between;
+
+            gap: 25px; /* Specify the Gap between childs. This complements justify-content created gaps. */
+
+            /* This is about how the parent box looks like */
+            border: black 4px solid;
+            background-color: orangered;
+            min-height: 300px;
+        }
+
+        .child {
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            /* Below is about inside the child-box */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 300px;
+            background-color: aqua;
+        }
+
+        .child:nth-child(2) {
+            background-color: antiquewhite;
+        }
+
+        .child:nth-child(3) {
+            background-color: orange;
+        }
+
+        .child:nth-child(4) {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="child">
+        <h3>Abracadabra</h3>
+    </div>
+    <div class="child">
+        <h3>Banana</h3>
+    </div>
+    <div class="child">
+        <h3>Circus</h3>
+    </div>
+    <div class="child">
+        <h3>Demolition</h3>
+    </div>
+
+</div>
+</body>
+</html>

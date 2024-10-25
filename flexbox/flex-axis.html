@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Playing</title>
+    <style>
+        .parent {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: start;
+            align-items: start;
+            border: black 4px solid;
+            background-color: orangered;
+            padding: 10px;
+            min-height: 300px;
+        }
+
+        .child {
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+            height: 400px;
+            width: 300px;
+            background-color: aqua;
+            margin: 5px;
+            padding: 0 5px 0 5px;
+        }
+
+        .child:nth-child(2) {
+            background-color: antiquewhite;
+        }
+
+        .child:nth-child(3) {
+            background-color: orange;
+        }
+
+        .child:nth-child(4) {
+            background-color: aliceblue;
+        }
+
+        .child:nth-child(5) {
+            background-color: aquamarine;
+        }
+
+        .child:nth-child(6) {
+            background-color: azure;
+        }
+
+        .child:nth-child(7) {
+            background-color: beige;
+        }
+
+        .child:nth-child(8) {
+            background-color: bisque;
+        }
+
+        .child:nth-child(9) {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+<!--    <div class="child">-->
+<!--        <h3>A very long sentence</h3>-->
+<!--    </div>-->
+<!--    <div class="child">-->
+<!--        <h3>A very very very very long sentence</h3>-->
+<!--    </div>-->
+    <div class="child"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet, orci quis iaculis
+        luctus, leo felis lacinia augue, accumsan egestas augue massa at purus. Suspendisse semper eu urna ac malesuada.
+        Donec nec purus non elit pretium pretium. Suspendisse efficitur luctus venenatis. Ut euismod, massa vel
+        fermentum facilisis, enim libero semper tellus, non condimentum enim tortor sed elit. Vivamus nec ultricies
+        neque. Duis eleifend lacus sed elit convallis gravida. Integer egestas vel risus eget rutrum.</p></div>
+
+    <div class="child"><p>Nulla iaculis posuere tincidunt. Vestibulum scelerisque nibh purus, in interdum odio euismod
+        eget. Vivamus non velit rhoncus, aliquet nulla fermentum, facilisis felis. Sed elementum molestie scelerisque.
+        Aliquam erat volutpat. Nullam arcu turpis, tincidunt a rhoncus et, convallis eget mauris. Pellentesque sapien
+        lacus, scelerisque sed pretium ac, euismod eget nunc.</p></div>
+
+    <div class="child"><p>Nullam fringilla porta nisl nec gravida. Nam porta blandit nisl, ac congue neque ultricies
+        vitae. Etiam tincidunt vitae elit sit amet placerat. Nulla faucibus nisi ligula, vitae gravida massa faucibus
+        eget. Quisque augue elit, ullamcorper ut urna quis, volutpat interdum augue. Proin fringilla egestas magna a
+        accumsan. Aenean nec gravida felis, vitae ultrices purus. Suspendisse tellus nunc, consequat scelerisque cursus
+        quis, laoreet at erat. Cras et nibh odio. Curabitur cursus libero a nulla faucibus consequat. Cras sit amet leo
+        at arcu mollis sagittis molestie ut ante. Duis aliquam nunc ac leo consequat, vitae faucibus metus accumsan.
+        Donec vel erat nec dui laoreet auctor et in ante.</p></div>
+
+    <div class="child"><p>Fusce eget velit quam. Suspendisse potenti. Integer sed lectus condimentum elit ornare rhoncus
+        nec id arcu. Nulla a semper nisi. Proin id orci eget enim tempor convallis at sit amet metus. In sed nunc
+        suscipit augue viverra commodo sit amet vel velit. Vivamus molestie, augue ac interdum viverra, ex nibh
+        imperdiet elit, sit amet hendrerit sapien magna quis dui.</p></div>
+
+    <div class="child"><p>Cras vulputate eros euismod dui vehicula, a maximus nibh sollicitudin. Nullam eget tempus
+        sapien, mattis posuere ipsum. Maecenas venenatis, tortor sit amet volutpat varius, purus justo tincidunt metus,
+        id mattis mauris tellus eu augue. Praesent eget felis ut sapien vehicula euismod. Suspendisse potenti. Nam
+        consequat at nisl a molestie. Nunc vel lorem et mauris tincidunt pretium id a velit.</p></div>
+
+    <div class="child"><p>Cras blandit, libero ac tincidunt ornare, erat dui placerat nisi, quis eleifend metus elit ac
+        lorem. Donec bibendum augue in augue aliquet, eget hendrerit nisl hendrerit. Fusce pellentesque felis neque, non
+        elementum ligula semper a. Vestibulum eu scelerisque magna. Duis rhoncus pharetra felis sit amet semper. Nulla
+        id diam orci. Suspendisse non lorem a ante luctus pellentesque sed in magna. Sed ultrices vel augue sed
+        porttitor. Donec non nisi dolor. Donec ex lectus, condimentum eu rhoncus a, volutpat et massa. Morbi eleifend
+        lacinia eros, sed vestibulum felis euismod ut. Sed eget dui arcu. Suspendisse sit amet enim volutpat, finibus
+        ante a, placerat dolor. Donec vel dapibus massa. Vestibulum nec est eget est tempor feugiat sed aliquam metus.
+        Fusce turpis mauris, mollis eu pretium ut, consectetur mollis libero.</p></div>
+
+    <div class="child"><p>Nam pharetra massa magna, vel commodo neque auctor vel. Sed a justo neque. Morbi vehicula
+        sodales velit in varius. Nullam sit amet augue neque. Etiam arcu neque, pretium eget sapien ac, auctor iaculis
+        quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+        interdum nibh nec neque viverra ornare. Phasellus commodo orci ut quam vestibulum dictum. Suspendisse
+        pellentesque vel leo ut sollicitudin. Etiam metus odio, porttitor at finibus molestie, eleifend ac enim. Nunc
+        eleifend metus justo, vitae pulvinar felis pulvinar nec. Curabitur sagittis nisl quis ante rhoncus gravida. Duis
+        ut convallis erat.</p></div>
+
+    <div class="child"><p>Nulla facilisi. Suspendisse elementum est eros. Curabitur pellentesque efficitur posuere.
+        Vestibulum semper, ante eget consequat pretium, massa lectus lacinia diam, sit amet sagittis ante quam eu massa.
+        Nulla a facilisis ante, vel porta dolor. Nullam condimentum leo ut facilisis accumsan. Donec eget molestie quam.
+        Sed vulputate diam in elit suscipit luctus. Ut molestie, neque eu convallis vestibulum, risus lectus feugiat
+        tellus, id tincidunt ipsum dui rutrum metus. Vestibulum laoreet tempus ex, a scelerisque nunc dignissim
+        quis.</p></div>
+
+    <div class="child"><p>Nunc faucibus imperdiet lectus, quis placerat elit rhoncus quis. Donec facilisis enim id dui
+        congue, nec porttitor ipsum suscipit. Maecenas ultrices aliquam tellus sit amet condimentum. Suspendisse
+        ultricies ligula velit, eget hendrerit quam bibendum at. Proin dui dui, aliquet non sollicitudin facilisis,
+        facilisis quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+        Nullam rhoncus, mi vitae vulputate convallis, diam lectus sagittis eros, vel dictum enim risus et ipsum.
+        Maecenas ut risus leo. Proin a tempor leo. Proin mollis diam magna, in ultrices massa dictum vel. Etiam
+        scelerisque non quam eleifend molestie.</p></div>
+
+</div>
+</body>
+</html>
