@@ -12,3 +12,5 @@ Just start.sh
 ```bash
 ./start.sh
 ```
+
+It needs live-server (nodejs) or Python
