@@ -6,3 +6,9 @@ Learning some tricks and following some simple tutorials on YouTube.
 
 What I learn is in here. 
 Far from complete and it will grow over time. 
+
+## Running
+Just start.sh
+```bash
+./start.sh
+```
