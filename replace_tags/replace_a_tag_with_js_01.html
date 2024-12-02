@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Replacing Text</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("bert01").replaceWith("<h2>Put the text content of berttag here</h2>");
+        })
+
+        $(document).ready(function () {
+            $("blackbox").replaceWith('<rect x="100" y="0" width="100" height="50" fill="black"/>');
+        })
+    </script>
+</head>
+<body>
+<h1>Hello</h1>
+<bert01>My text</bert01>
+<h3>sdlkjfsldkfj</h3>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="50">
+    <text x="30" y="30" fill="black" font-size="16" font-family="Arial" text-anchor="start"
+          alignment-baseline="middle">
+        Input
+    </text>
+    <polygon points="90,27 70,17 70,37" fill="green"/>
+    <blackbox></blackbox> <!-- DIT WERKT NIET .... -->
+    <text x="150" y="25" fill="white" font-size="16" font-family="Arial" font-weight="bold"
+          text-anchor="middle" alignment-baseline="middle">
+        Black Box
+    </text>
+    <polygon points="230,27 210,17 210,37" fill="green"/>
+    <text x="235" y="30" fill="black" font-size="16" font-family="Arial" text-anchor="start"
+          alignment-baseline="middle">
+        Output
+    </text>
+</svg>
+</body>
+</html>
